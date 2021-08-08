@@ -1,7 +1,48 @@
-h1 {
-    color: red;
-    background-color: beige;
-    }
+
 body {
     background-color: rgb(122, 175, 171);
 }
+
+.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    color: #95ccff;
+    font-weight: bold;
+}
+
+.example {
+    position: relative;
+    }
+  
+  .example .toptitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    /*文字の装飾は省略*/
+    }
+  
+  .example img {
+    width: 100%;
+    }
+
+
+
+
+
