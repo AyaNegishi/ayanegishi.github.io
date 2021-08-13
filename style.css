@@ -1,13 +1,106 @@
 
 body {
-    background-color: rgb(122, 175, 171);
+   padding-top: 90px;
+   height: 100vw; /* スクロールの演出を見れるようにmainに高さを指定 */
+    background-color: #abcbd3;
+    font-family: "BIZ UDMincho";
+    line-height: 1.55;
+}
+
+header {
+  width: 100%; /* 幅いっぱいを指定 */
+  height: 98px; /* 高さを50pxに指定 */
+  background: rgb(219, 214, 210); /* 背景色にグレーを指定 */
+  padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+  position: fixed; /* ウィンドウを基準に画面に固定 */
+  top: 0; /* 上下の固定位置を上から0pxにする */
+  left: 0; /* 左右の固定位置を左から0pxにする */
+  display: flex; /* 中の要素を横並びにする */
+  align-items: center; /* 中の要素を上下中央に並べる */
+  font-family: 'Vollkorn', serif;
+}
+
+header .gnav .menu {
+  display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+  list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+  margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+.header-logo {
+  font-family: serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.honya {
+  font-family: "BIZ UDMincho";
+  font-weight: bold;
+  color: #0e4e6b;
+  border-bottom: dotted 3px
+}
+
+
+.hanya {
+  font-family: "BIZ UDMincho";
+  font-weight: bold;
+  border-bottom: double 6px #0e4e6b;
+  color: #0e4e6b;
+}
+
+img {
+  opacity: 0.4;
+}
+
+.example {
+  position: relative;
+  }
+
+.example .toptitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:1;
+  padding:1;
+  font-size: 40px;
+  color: #00405e;
+  font-family: "BIZ UDMincho";
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #c9c4bc;
+  opacity: 0.75;
+}
+
+.example img {
+  width: 100%;
+  }
+
+  
+.toptitle .try {
+    padding: 10px;
+    margin: 10px;
+    border: double 10px #ffffff;
+}
+.toptitle .try p {
+    margin: 0; 
+    padding: 0;
 }
 
 .box26 {
     position: relative;
     margin: 2em 0;
     padding: 0.5em 1em;
-    border: solid 3px rgba(255, 255, 255, 0.8);
+    border: solid 3px #0e4e6b;
     border-radius: 8px;
 }
 .box26 .box-title {
@@ -18,31 +111,34 @@ body {
     padding: 0 9px;
     line-height: 1;
     font-size: 19px;
-    color: #95ccff;
+    background: #abcbd3;
+    color:  #0e4e6b;
     font-weight: bold;
 }
 
-.example {
-    position: relative;
-    }
-  
-  .example .toptitle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    margin:0;
-    padding:0;
-    /*文字の装飾は省略*/
-    }
-  
-  .example img {
-    width: 100%;
-    }
+.span .box-title {
+  font-family: "BIZ UDMincho";
+  font-weight: bold;
+}
 
+footer {
+  width: 100%;
+  color: #fff;
+  height: 235px; 
+  padding: 20px 20px;
+  background-color: #474747;
+  box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+}
 
+.footer-logo {
+  font-family: monospace;
+ font-size: 25px;
+ }
 
+footer .gnav .menu li {
+ list-style: none; /* リストの[・]を消す */
+}
 
-
+.footer-list {
+  font-family: monospace;
+}
